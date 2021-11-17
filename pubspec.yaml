@@ -39,7 +39,7 @@ dependencies:
   flutter_spinkit: ^5.0.0
   flutter_svg: ^0.22.0
   font_awesome_flutter: ^9.1.0
-  geolocator: ^7.2.0+1
+  geolocator: ^7.7.1
   get: ^4.3.0
   google_maps_flutter: ^2.0.6
   google_sign_in: ^5.0.4
