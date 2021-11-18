@@ -64,10 +64,12 @@ class _ChatScreenState extends State<ChatScreen> {
               backgroundColor: Colors.white,
               backgroundImage: chat.receiver.id == _userController.user.value.id
                   ? chat.sender.picture != null
-                      ? NetworkImage("$BASE_IP/${chat.receiver.picture}")
+                      ? NetworkImage(
+                          "$BASE_IP/uploads/${chat.receiver.picture}")
                       : AssetImage("assets/people.png") as ImageProvider
                   : chat.receiver.picture != null
-                      ? NetworkImage("$BASE_IP/${chat.receiver.picture}")
+                      ? NetworkImage(
+                          "$BASE_IP/uploads/${chat.receiver.picture}")
                       : AssetImage("assets/people.png") as ImageProvider,
             ),
             SizedBox(

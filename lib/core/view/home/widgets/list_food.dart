@@ -58,7 +58,7 @@ class ListFood extends StatelessWidget {
                                   children: [
                                     CachedNetworkImage(
                                       imageUrl:
-                                          "$BASE_IP/${_foodController.listFood[index].picture}",
+                                          "$BASE_IP/uploads/${_foodController.listFood[index].picture}",
                                       imageBuilder: (_, imageProvider) =>
                                           Container(
                                               height: 90,
@@ -185,7 +185,7 @@ class ListFood extends StatelessWidget {
                                                           .picture !=
                                                       null
                                                   ? NetworkImage(
-                                                      "$BASE_IP/${_foodController.listFood[index].user!.picture}")
+                                                      "$BASE_IP/uploads/${_foodController.listFood[index].user!.picture}")
                                                   : AssetImage(
                                                           "assets/people.png")
                                                       as ImageProvider,

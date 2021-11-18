@@ -224,7 +224,7 @@ class _AddFoodScreenState extends State<AddFoodScreen> {
                             )
                           : data['food'] != null
                               ? Image.network(
-                                  "$BASE_IP/${data['food'].picture}",
+                                  "$BASE_IP/uploads/${data['food'].picture}",
                                   fit: BoxFit.cover,
                                 )
                               : Icon(

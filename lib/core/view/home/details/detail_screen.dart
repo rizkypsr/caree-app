@@ -96,7 +96,7 @@ class DetailScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: NetworkImage("$BASE_IP/${food.picture}")),
+                    image: NetworkImage("$BASE_IP/uploads/${food.picture}")),
               ),
             ),
             Padding(
@@ -144,7 +144,8 @@ class DetailScreen extends StatelessWidget {
                         radius: 12.0,
                         backgroundColor: Colors.white,
                         backgroundImage: food.user!.picture != null
-                            ? NetworkImage("$BASE_IP/${food.user!.picture}")
+                            ? NetworkImage(
+                                "$BASE_IP/uploads/${food.user!.picture}")
                             : AssetImage("assets/people.png") as ImageProvider,
                       ),
                       Text(

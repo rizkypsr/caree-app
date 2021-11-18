@@ -125,7 +125,7 @@ class DetailOrderScreen extends StatelessWidget {
                                 child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: Image.network(
-                                      "$BASE_IP/${order.food!.picture}",
+                                      "$BASE_IP/uploads/${order.food!.picture}",
                                       fit: BoxFit.cover,
                                     )),
                               ),

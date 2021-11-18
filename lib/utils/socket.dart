@@ -8,7 +8,7 @@ class SocketClient {
     if (_socket != null) return;
 
     _socket = client.io(
-        SOCKET_URL,
+        BASE_IP,
         client.OptionBuilder()
             .setTransports(['websocket'])
             .disableAutoConnect()

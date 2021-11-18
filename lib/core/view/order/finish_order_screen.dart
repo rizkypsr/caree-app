@@ -67,7 +67,7 @@ class FinishOrderScreen extends StatelessWidget {
                       fit: BoxFit.cover,
                     ).image
                   : Image.network(
-                      "$BASE_IP/${user.picture}",
+                      "$BASE_IP/uploads/${user.picture}",
                       fit: BoxFit.cover,
                     ).image,
             ),
